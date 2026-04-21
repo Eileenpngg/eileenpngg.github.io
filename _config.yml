@@ -10,15 +10,15 @@ description: >-
   OSCP-certified penetration tester and software engineer based in Singapore.
   SIT graduate with startup experience and a focus on offensive security.
 baseurl: ""
-url: "https://eileenpng.github.io"
+url: "https://eileenpngg.github.io"
 
 # =============================================
 # Personal details — only edit this section
 # =============================================
 author:
   name: "Eileen Png"
-  initials: "YN"                              # Displayed in the avatar circle on the hero
-  github_username: "yourname"
+  initials: "EP"                              # Displayed in the avatar circle on the hero
+  github_username: "Eileenpngg"
   linkedin_url: "https://www.linkedin.com/in/eileenpng/"
   hashnode_url: "https://hashnode.com/@eileenpngg"
   email: "eileenpngg@email.com"
