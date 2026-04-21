@@ -5,7 +5,6 @@ title: Projects
 
 <div class="container">
 
-  <!-- Page header -->
   <div class="page-hero">
     <span class="page-label">Work</span>
     <h1 class="page-title">Projects</h1>
@@ -14,9 +13,8 @@ title: Projects
     </p>
   </div>
 
-  <!-- All projects grid -->
   <div style="padding: 2.5rem 0 4rem;">
-    <div class="projects-grid">
+    <div class="projects-grid reveal">
       {%- for project in site.data.projects -%}
       <article class="project-card">
         <div class="project-name">{{ project.name }}</div>

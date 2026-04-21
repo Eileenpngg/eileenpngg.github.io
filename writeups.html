@@ -5,7 +5,6 @@ title: Write-ups
 
 <div class="container">
 
-  <!-- Page header -->
   <div class="page-hero">
     <span class="page-label">Writing</span>
     <h1 class="page-title">Write-ups</h1>
@@ -15,11 +14,9 @@ title: Write-ups
     </p>
   </div>
 
-  <!-- Content -->
   <div style="padding-top: 2.5rem; padding-bottom: 4rem;">
 
-    <!-- Banner: posts live on Hashnode -->
-    <div class="notice-banner">
+    <div class="notice-banner reveal">
       Full write-ups are published at
       <a href="{{ site.author.hashnode_url }}"
          target="_blank"
@@ -27,37 +24,24 @@ title: Write-ups
       — the cards below link out to each post.
     </div>
 
-    <!-- Write-up list -->
     <div class="writeups-list" aria-label="Write-ups">
       {%- for writeup in site.data.writeups -%}
-      <article class="writeup-card">
-
-        <!-- Sequential post number -->
+      <article class="writeup-card reveal">
         <div class="writeup-number" aria-hidden="true">{{ writeup.number }}</div>
-
         <div class="writeup-body">
-          <!-- Category + date row -->
           <div class="writeup-meta">
-            <span class="category-badge category-{{ writeup.category_slug }}">
-              {{ writeup.category }}
-            </span>
+            <span class="category-badge category-{{ writeup.category_slug }}">{{ writeup.category }}</span>
             <time class="writeup-date">{{ writeup.date }}</time>
           </div>
-
           <h2 class="writeup-title">
-            <a href="{{ writeup.url }}" target="_blank" rel="noopener noreferrer">
-              {{ writeup.title }}
-            </a>
+            <a href="{{ writeup.url }}" target="_blank" rel="noopener noreferrer">{{ writeup.title }}</a>
           </h2>
-
           <p class="writeup-excerpt">{{ writeup.excerpt }}</p>
-
           <a href="{{ writeup.url }}"
              class="writeup-read-link"
              target="_blank"
              rel="noopener noreferrer">Read on Hashnode &rarr;</a>
         </div>
-
       </article>
       {%- endfor -%}
     </div>

@@ -22,6 +22,8 @@ author:
   linkedin_url: "https://www.linkedin.com/in/eileenpng/"
   hashnode_url: "https://hashnode.com/@eileenpngg"
   email: "eileenpngg@email.com"
+  # Avatar photo — place your image at assets/images/avatar.jpg and uncomment:
+  # avatar: "/assets/images/avatar.jpg"
 
 # =============================================
 # Build settings
