@@ -1,6 +1,6 @@
 # eileenpngg.github.io
 
-Personal portfolio site for Eileen — cybersecurity student at SIT, OSCP certified.
+Personal portfolio site for Eileen — Student at SIT, OSCP certified.
 
 Built with Jekyll and GitHub Pages. Clean, minimal, no frameworks.
 
