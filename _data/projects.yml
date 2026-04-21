@@ -1,0 +1,45 @@
+# =============================================
+# Projects data
+# Add or edit entries here; pages render from this file automatically.
+# Set featured: true to show on the homepage.
+# =============================================
+
+- name: ad-lab-setup
+  description: >-
+    Automated Active Directory lab provisioning using Vagrant and Ansible.
+    Spins up a domain controller, workstations, and deliberately vulnerable
+    configurations for practising lateral movement and privilege escalation.
+  tags: [Active Directory, Ansible, Vagrant, Red Team]
+  stars: 24
+  repo: "https://github.com/yourname/ad-lab-setup"
+  featured: true
+
+- name: recon-toolkit
+  description: >-
+    Modular recon automation that chains nmap, subfinder, httpx, and nuclei into
+    a single workflow with structured JSON/Markdown output. Built for bug bounty
+    and external attack surface enumeration.
+  tags: [Python, Recon, OSINT, Bug Bounty]
+  stars: 18
+  repo: "https://github.com/yourname/recon-toolkit"
+  featured: true
+
+- name: healthtech-threat-model
+  description: >-
+    Threat model and attack surface analysis for a fictional healthtech SaaS
+    platform. Covers HIPAA-adjacent data flows, trust boundaries, and
+    common misconfigurations using the STRIDE methodology.
+  tags: [Threat Modeling, Healthcare, STRIDE]
+  stars: 11
+  repo: "https://github.com/yourname/healthtech-threat-model"
+  featured: false
+
+- name: ctf-writeups
+  description: >-
+    Collection of CTF write-ups from HackTheBox, TryHackMe, and national
+    competitions. Covers web exploitation, binary exploitation, Active Directory,
+    and forensics challenges.
+  tags: [CTF, HackTheBox, TryHackMe, Write-ups]
+  stars: 35
+  repo: "https://github.com/yourname/ctf-writeups"
+  featured: false

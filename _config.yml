@@ -1,0 +1,41 @@
+# =============================================
+# Jekyll configuration
+# Edit the 'author' block below to update all
+# personal details across every page at once.
+# =============================================
+
+title: "Your Name"
+email: "your@email.com"
+description: >-
+  OSCP-certified penetration tester and software engineer based in Singapore.
+  SIT graduate with startup experience and a focus on offensive security.
+baseurl: ""
+url: "https://yourname.github.io"
+
+# =============================================
+# Personal details — only edit this section
+# =============================================
+author:
+  name: "Your Name"
+  initials: "YN"                              # Displayed in the avatar circle on the hero
+  github_username: "yourname"
+  linkedin_url: "https://linkedin.com/in/yourname"
+  hashnode_url: "https://yourname.hashnode.dev"
+  email: "your@email.com"
+
+# =============================================
+# Build settings
+# =============================================
+theme: minima
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Files/dirs excluded from the build output
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .bundle
+  - vendor

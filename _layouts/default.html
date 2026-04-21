@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description }}">
+
+  <title>
+    {%- if page.title -%}
+      {{ page.title }} — {{ site.author.name }}
+    {%- else -%}
+      {{ site.author.name }} — Cybersecurity
+    {%- endif -%}
+  </title>
+
+  <link rel="canonical" href="{{ page.url | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  {% seo %}
+</head>
+<body>
+
+  <!-- ==============================
+       NAVIGATION
+       ============================== -->
+  <nav class="site-nav" aria-label="Site navigation">
+    <div class="nav-inner">
+
+      <a href="{{ '/' | relative_url }}" class="nav-logo"
+         aria-label="{{ site.author.name }} — home">~/{{ site.author.github_username }}.github.io</a>
+
+      <!-- Hamburger toggle (mobile only) -->
+      <button class="nav-toggle"
+              aria-label="Toggle navigation"
+              aria-expanded="false"
+              aria-controls="nav-links"
+              id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="{{ '/#about' | relative_url }}">About</a></li>
+        <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
+        <li><a href="{{ '/writeups' | relative_url }}">Write-ups</a></li>
+        <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+        <li><a href="{{ '/contact' | relative_url }}" class="btn-hire">Hire me</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- ==============================
+       PAGE CONTENT
+       ============================== -->
+  <main id="main-content">
+    {{ content }}
+  </main>
+
+  <!-- ==============================
+       FOOTER
+       ============================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-left">{{ site.author.github_username }}.github.io &middot; built with GitHub Pages</span>
+      <span class="footer-right">Singapore &middot; open to work</span>
+    </div>
+  </footer>
+
+  <!-- Minimal vanilla JS — nav toggle only, no framework -->
+  <script>
+    (function () {
+      var toggle = document.getElementById('nav-toggle');
+      var links  = document.getElementById('nav-links');
+      if (!toggle || !links) return;
+
+      toggle.addEventListener('click', function () {
+        var isOpen = links.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+
+      /* Close when a link is tapped on mobile */
+      links.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () {
+          links.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+---
+layout: default
+title: Contact
+---
+
+<div class="container">
+
+  <!-- Page header -->
+  <div class="page-hero">
+    <span class="page-label">Get in touch</span>
+    <h1 class="page-title">Contact</h1>
+    <p class="page-subtitle">
+      Open to cybersecurity roles in Singapore and select remote engagements.
+    </p>
+  </div>
+
+  <!-- Two-column layout: intro left, link cards right -->
+  <div class="contact-grid">
+
+    <!-- Left: what I'm looking for -->
+    <div class="contact-intro">
+      <p>
+        I'm actively looking for cybersecurity internships and full-time roles in Singapore.
+        My focus is offensive security — penetration testing and red team operations in
+        regulated environments.
+      </p>
+      <p>
+        Particularly interested in roles at banks, government agencies (MHA, GovTech, DSTA),
+        and managed security service providers (MSSPs) where I can apply an OSCP background
+        and software engineering experience to real-world assessments.
+      </p>
+      <p>
+        I'm also open to bug bounty collaborations, CTF teams, and applied security research.
+        Feel free to reach out through any of the channels listed here.
+      </p>
+    </div>
+
+    <!-- Right: link cards -->
+    <div class="contact-links">
+
+      <a href="https://github.com/{{ site.author.github_username }}"
+         class="contact-card"
+         target="_blank"
+         rel="noopener noreferrer">
+        <div class="contact-icon" aria-hidden="true">GH</div>
+        <div>
+          <div class="contact-platform">GitHub</div>
+          <div class="contact-url">github.com/{{ site.author.github_username }}</div>
+        </div>
+      </a>
+
+      <a href="{{ site.author.linkedin_url }}"
+         class="contact-card"
+         target="_blank"
+         rel="noopener noreferrer">
+        <div class="contact-icon" aria-hidden="true">in</div>
+        <div>
+          <div class="contact-platform">LinkedIn</div>
+          <div class="contact-url">{{ site.author.linkedin_url | remove: "https://" }}</div>
+        </div>
+      </a>
+
+      <a href="mailto:{{ site.author.email }}" class="contact-card">
+        <div class="contact-icon" aria-hidden="true">@</div>
+        <div>
+          <div class="contact-platform">Email</div>
+          <div class="contact-url">{{ site.author.email }}</div>
+        </div>
+      </a>
+
+      <a href="{{ site.author.hashnode_url }}"
+         class="contact-card"
+         target="_blank"
+         rel="noopener noreferrer">
+        <div class="contact-icon" aria-hidden="true">HN</div>
+        <div>
+          <div class="contact-platform">Hashnode</div>
+          <div class="contact-url">{{ site.author.hashnode_url | remove: "https://" }}</div>
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+
+</div>

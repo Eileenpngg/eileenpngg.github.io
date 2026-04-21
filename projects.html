@@ -1,0 +1,41 @@
+---
+layout: default
+title: Projects
+---
+
+<div class="container">
+
+  <!-- Page header -->
+  <div class="page-hero">
+    <span class="page-label">Work</span>
+    <h1 class="page-title">Projects</h1>
+    <p class="page-subtitle">
+      Security tools, lab setups, and research. Everything is open source on GitHub.
+    </p>
+  </div>
+
+  <!-- All projects grid -->
+  <div style="padding: 2.5rem 0 4rem;">
+    <div class="projects-grid">
+      {%- for project in site.data.projects -%}
+      <article class="project-card">
+        <div class="project-name">{{ project.name }}</div>
+        <p class="project-desc">{{ project.description }}</p>
+        <div class="project-tags" aria-label="Tags">
+          {%- for tag in project.tags -%}
+          <span class="tag">{{ tag }}</span>
+          {%- endfor -%}
+        </div>
+        <div class="project-footer">
+          <span class="project-stars">&#9733; {{ project.stars }}</span>
+          <a href="{{ project.repo }}"
+             class="project-link"
+             target="_blank"
+             rel="noopener noreferrer">View repo &rarr;</a>
+        </div>
+      </article>
+      {%- endfor -%}
+    </div>
+  </div>
+
+</div>

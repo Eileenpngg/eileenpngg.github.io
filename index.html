@@ -1,0 +1,158 @@
+---
+layout: default
+---
+
+<!-- ======================================================
+     HERO
+     ====================================================== -->
+<section class="hero" id="about">
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- Left: text content -->
+      <div class="hero-text">
+
+        <h1 class="hero-name">{{ site.author.name }}</h1>
+
+        <!-- Terminal-style descriptor line -->
+        <p class="hero-terminal">$ whoami &rarr; OSCP-certified pentester &amp; software engineer, Singapore</p>
+
+        <p class="hero-bio">
+          I'm a final-year Computer Science student at SIT with an OSCP certification and
+          hands-on experience building software at early-stage startups. My work sits at the
+          intersection of offensive security and engineering — I break things to understand
+          how to build them more securely. Previously in healthcare and nutrition; now focused
+          on penetration testing and red team operations.
+        </p>
+
+        <!-- Credential / identity badge pills -->
+        <div class="badge-row" aria-label="Credentials">
+          <span class="badge">OSCP Certified</span>
+          <span class="badge">Software Engineer</span>
+          <span class="badge">HTB Pro Hacker</span>
+          <span class="badge">Bug Bounty Contributor</span>
+          <span class="badge">Singapore</span>
+        </div>
+
+        <!-- Primary CTAs -->
+        <div class="hero-cta">
+          <a href="{{ '/projects' | relative_url }}" class="btn btn-primary">View Projects</a>
+          <a href="{{ '/writeups' | relative_url }}" class="btn btn-secondary">Read Write-ups</a>
+          <a href="{{ site.author.hashnode_url }}"
+             class="btn btn-accent"
+             target="_blank"
+             rel="noopener noreferrer">Hashnode Blog &rarr;</a>
+        </div>
+
+        <!-- Social links in monospace -->
+        <nav class="hero-socials" aria-label="Social links">
+          <a href="https://github.com/{{ site.author.github_username }}"
+             target="_blank" rel="noopener noreferrer">github/{{ site.author.github_username }}</a>
+          <a href="{{ site.author.linkedin_url }}"
+             target="_blank" rel="noopener noreferrer">linkedin</a>
+          <a href="{{ site.author.hashnode_url }}"
+             target="_blank" rel="noopener noreferrer">hashnode</a>
+        </nav>
+
+      </div>
+
+      <!-- Right: avatar circle -->
+      <div class="hero-avatar" aria-hidden="true">{{ site.author.initials }}</div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     STATS ROW
+     ====================================================== -->
+<section class="stats" aria-label="Key stats">
+  <div class="container">
+    <div class="stats-grid">
+
+      <div class="stat-tile">
+        <div class="stat-value">OSCP</div>
+        <div class="stat-label">Certified</div>
+      </div>
+
+      <div class="stat-tile">
+        <div class="stat-value">50+</div>
+        <div class="stat-label">HTB Machines Rooted</div>
+      </div>
+
+      <div class="stat-tile">
+        <div class="stat-value">3</div>
+        <div class="stat-label">Bug Bounty Mentions</div>
+      </div>
+
+      <div class="stat-tile">
+        <div class="stat-value">12</div>
+        <div class="stat-label">Write-ups Published</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     FEATURED PROJECTS
+     ====================================================== -->
+<section class="section" id="projects" aria-labelledby="featured-projects-heading">
+  <div class="container">
+
+    <div class="section-header">
+      <span class="section-title" id="featured-projects-heading">Featured Projects</span>
+      <a href="{{ '/projects' | relative_url }}" class="section-link">View all &rarr;</a>
+    </div>
+
+    <div class="projects-grid">
+      {%- assign featured_projects = site.data.projects | where: "featured", true -%}
+      {%- for project in featured_projects -%}
+      <article class="project-card">
+        <div class="project-name">{{ project.name }}</div>
+        <p class="project-desc">{{ project.description }}</p>
+        <div class="project-tags" aria-label="Tags">
+          {%- for tag in project.tags -%}
+          <span class="tag">{{ tag }}</span>
+          {%- endfor -%}
+        </div>
+        <div class="project-footer">
+          <span class="project-stars">&#9733; {{ project.stars }}</span>
+          <a href="{{ project.repo }}"
+             class="project-link"
+             target="_blank"
+             rel="noopener noreferrer">View repo &rarr;</a>
+        </div>
+      </article>
+      {%- endfor -%}
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ======================================================
+     BLOG PREVIEW BANNER
+     ====================================================== -->
+<section class="section section--last" aria-label="Blog">
+  <div class="container">
+    <div class="blog-banner">
+
+      <div class="blog-banner-text">
+        <span class="blog-banner-label">Latest Writing</span>
+        <p class="blog-banner-title">
+          Technical write-ups on HackTheBox, OSCP, and red team techniques
+        </p>
+        <p class="blog-banner-sub">Full posts live on Hashnode — updated regularly.</p>
+      </div>
+
+      <a href="{{ site.author.hashnode_url }}"
+         class="btn-blog"
+         target="_blank"
+         rel="noopener noreferrer">Read on Hashnode &rarr;</a>
+
+    </div>
+  </div>
+</section>
