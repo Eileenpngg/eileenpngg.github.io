@@ -1,45 +1,7 @@
 # =============================================
 # Write-ups data
-# Add entries here; the write-ups page renders from this list.
+# Add entries here when posts go live on Hashnode.
 # category_slug must be one of: htb | oscp (controls badge colour)
 # =============================================
 
-- number: "04"
-  category: HTB Machine
-  category_slug: htb
-  date: "15 Apr 2026"
-  title: "HTB: Cerberus — Active Directory Misconfiguration to Domain Admin"
-  excerpt: >-
-    Walkthrough of Cerberus, covering ADCS abuse via ESC1, Kerberoasting,
-    and lateral movement through a misconfigured cross-forest trust relationship.
-  url: "https://yourname.hashnode.dev/htb-cerberus"
-
-- number: "03"
-  category: HTB Machine
-  category_slug: htb
-  date: "02 Mar 2026"
-  title: "HTB: Gofer — SSRF to Internal Proxy and Phishing Pivot"
-  excerpt: >-
-    Exploiting a blind SSRF vulnerability to reach an internal Gopher proxy,
-    followed by a creative phishing chain to escalate privileges to root.
-  url: "https://yourname.hashnode.dev/htb-gofer"
-
-- number: "02"
-  category: OSCP Prep
-  category_slug: oscp
-  date: "10 Jan 2026"
-  title: "OSCP Retrospective — What Actually Helped and What Didn't"
-  excerpt: >-
-    A candid retrospective after passing OSCP on first attempt: the resources
-    that moved the needle, common pitfalls, and a practical guide to the 24-hour exam.
-  url: "https://yourname.hashnode.dev/oscp-retrospective"
-
-- number: "01"
-  category: HTB Machine
-  category_slug: htb
-  date: "05 Dec 2025"
-  title: "HTB: Authority — ADCS ESC1 and PKI Misconfiguration"
-  excerpt: >-
-    Deep dive into exploiting Active Directory Certificate Services ESC1 to forge
-    client certificates and authenticate as Domain Admin without knowing any passwords.
-  url: "https://yourname.hashnode.dev/htb-authority"
+# No posts yet — see writeups.html for the coming soon message

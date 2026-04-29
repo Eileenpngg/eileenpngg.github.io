@@ -1013,6 +1013,17 @@ img, svg { display: block; max-width: 100%; }
 @media (max-width: 720px) { .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
 
 /* =============================================
+   COMING SOON
+   ============================================= */
+.coming-soon {
+  padding: 3rem 0;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  border-top: 0.5px solid var(--border);
+}
+
+/* =============================================
    UTILITIES
    ============================================= */
 .visually-hidden {

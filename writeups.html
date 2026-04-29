@@ -9,7 +9,7 @@ title: Write-ups
     <span class="page-label">Writing</span>
     <h1 class="page-title">Write-ups</h1>
     <p class="page-subtitle">
-      HackTheBox machines, OSCP prep, and red team techniques.
+      HackTheBox machines, OSCP prep, and security research.
       Full posts published on Hashnode.
     </p>
   </div>
@@ -21,9 +21,10 @@ title: Write-ups
       <a href="{{ site.author.hashnode_url }}"
          target="_blank"
          rel="noopener noreferrer">{{ site.author.hashnode_url }}</a>
-      — the cards below link out to each post.
+      — posts below link out to each one.
     </div>
 
+    {%- if site.data.writeups and site.data.writeups.size > 0 -%}
     <div class="writeups-list" aria-label="Write-ups">
       {%- for writeup in site.data.writeups -%}
       <article class="writeup-card reveal">
@@ -45,6 +46,11 @@ title: Write-ups
       </article>
       {%- endfor -%}
     </div>
+    {%- else -%}
+    <div class="coming-soon reveal">
+      <p>Write-ups coming soon — first post drops May 2026.</p>
+    </div>
+    {%- endif -%}
 
   </div>
 
